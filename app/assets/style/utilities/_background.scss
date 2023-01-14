@@ -1,0 +1,12 @@
+.bg-success-opacity {
+  background: $success 0 0;
+}
+
+.background-xl {
+  background: url("../images/banner-hearder.jpg") 20% 30% / cover;
+  height: 582px;
+  @include mobile {
+    background: url("../images/banner-hearder.jpg") right 25% bottom 40% / cover;
+    height: 560px;
+  }
+}
