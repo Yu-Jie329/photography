@@ -1,28 +1,25 @@
-$(function() {
+"use strict";
+
+$(function () {
   console.log('Hello Bootstrap5');
 });
-
-$(function() {
+$(function () {
   $("#my-date").datepicker();
 });
-
-
 var swiper = new Swiper(".mySwiper-pagination-dynamic", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     // clickable: true,
-    dynamicBullets: true,
-  },
+    dynamicBullets: true
+  }
 });
-
 var swiper = new Swiper(".mySwiper-freemode", {
-  
   slidesPerView: 1,
   spaceBetween: 30,
   breakpointsInverse: true,
-  breakpoints: { 
-    480: { 
+  breakpoints: {
+    480: {
       slidesPerView: 2,
       spaceBetween: 30
     },
@@ -36,52 +33,49 @@ var swiper = new Swiper(".mySwiper-freemode", {
       spaceBetween: 30
     }
   },
-  
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-  },
+    clickable: true
+  }
 });
-
-
 var swiper = new Swiper(".mySwiper-slides-grid", {
   slidesPerView: 3,
   slidesPerColumn: 2,
-  slidesPerColumnFill : 'row',
+  slidesPerColumnFill: 'row',
   spaceBetween: 10,
   clickable: true,
-  breakpoints: { 
-    480: { 
+  breakpoints: {
+    480: {
       slidesPerView: 1,
       spaceBetween: 15,
       slidesPerColumn: 3,
-      slidesPerColumnFill : 'column',
+      slidesPerColumnFill: 'column'
     },
     //當寬度大於等於640
     767: {
       slidesPerView: 1,
       spaceBetween: 15,
       slidesPerColumn: 3,
-      slidesPerColumnFill : 'column',
+      slidesPerColumnFill: 'column'
     },
     992: {
       slidesPerView: 2,
       spaceBetween: 10,
       slidesPerColumn: 2,
-      slidesPerColumnFill : 'row',
+      slidesPerColumnFill: 'row'
     }
   },
   grid: {
-    rows: 3,
+    rows: 3
   },
   pagination: {
     // el: ".swiper-pagination",
-    
-    type: "fraction",
+    type: "fraction"
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    prevEl: ".swiper-button-prev"
+  }
 });
+//# sourceMappingURL=all.js.map
